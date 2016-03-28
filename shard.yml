@@ -1,0 +1,12 @@
+name: azk
+version: 0.20.0
+
+authors:
+  - Everton Ribeiro <nuxlli@gmail.com>
+
+license: Apache-2
+
+dependencies:
+  duktape:
+    github: jessedoyle/duktape.cr
+    version: ~> 0.8.1
