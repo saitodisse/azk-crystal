@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [[ ! -e shards/bin/shards ]]; then
   if [[ ! -d crystal-lang/shards ]]; then
