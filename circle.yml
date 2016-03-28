@@ -5,7 +5,7 @@ dependencies:
   pre:
     - curl http://dist.crystal-lang.org/apt/setup.sh | sudo bash
     - sudo apt-get install crystal libyaml-dev -y
-    - sudo ./src/libexec/setup_circle.sh
+    - ./src/libexec/setup_circle.sh
     - shards install
 
 test:

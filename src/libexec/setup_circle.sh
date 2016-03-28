@@ -9,4 +9,4 @@ if [[ ! -e shards/bin/shards ]]; then
   crystal build src/shards.cr -o bin/shards --release
 fi
 
-cp bin/shards /usr/local/bin
+sudo cp bin/shards /usr/local/bin
