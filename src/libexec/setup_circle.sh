@@ -1,12 +1,14 @@
 #!/bin/bash
 
-if [[ ! -e shards/bin/shards ]]; then
-  if [[ ! -d crystal-lang/shards ]]; then
-    git clone https://github.com/crystal-lang/shards
+clone_dir=`pwd`/shards
+
+if [[ ! -e $clone_dir/bin/shards ]]; then
+  if [[ ! -d $clone_dir ]]; then
+    git clone https://github.com/crystal-lang/shards $clone_dir
   fi
 
-  cd shards
+  cd $clone_dir
   crystal build src/shards.cr -o bin/shards --release
 fi
 
-sudo cp bin/shards /usr/local/bin
+sudo install -m 755 $clone_dir/bin/shards /usr/local/bin
