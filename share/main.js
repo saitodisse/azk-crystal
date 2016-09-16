@@ -1,4 +1,4 @@
-var birthYear = 1985;
+var birthYear = 1988;
 
 function calcAge(birthYear) {
   var current = new Date();
