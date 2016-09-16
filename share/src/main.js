@@ -7,7 +7,8 @@ class AzkJs {
   }
 }
 
-new AzkJs();
+const azkJs = new AzkJs();
 
-p('console: ' + typeof console)
-p('print: ' + typeof print)
+p(`azkJs: ${azkJs}`);
+p(`console: ${typeof console}`);
+p(`print: ${typeof print}`);
