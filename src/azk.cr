@@ -8,7 +8,7 @@ module Azk
 
   def main
     sbx = Duktape::Sandbox.new
-    sbx.eval! File.read("./share/main.js")
+    sbx.eval! File.read("./share/dist/main.js")
   end
 end
 
