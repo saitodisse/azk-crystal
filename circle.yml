@@ -1,0 +1,13 @@
+dependencies:
+  cache_directories:
+    - shards
+    - libs
+  pre:
+    - curl http://dist.crystal-lang.org/apt/setup.sh | sudo bash
+    - sudo apt-get install crystal libyaml-dev -y
+    - ./src/libexec/setup_circle.sh
+    - shards install
+
+test:
+  override:
+    - crystal spec
